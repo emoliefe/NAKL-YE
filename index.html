@@ -3,274 +3,621 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIPro Moving – Professional Moving Services</title>
+  <title>VIPro Moving — Professional Moving Services</title>
+  <meta name="description" content="VIPro Moving offers professional, reliable moving services. AMSA member, BBB accredited, DOT licensed. Get your free quote today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ── NAVBAR ── -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-vi">VI</span><span class="logo-pro">Pro</span>
-        <span class="logo-sub">MOVING</span>
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-vi">VI</span><span class="logo-pro">Pro</span>&nbsp;<span class="logo-moving">MOVING</span>
       </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#quote" class="nav-cta-btn">Get Free Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-    </div>
+    </nav>
   </header>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="home">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <span class="badge">⭐ Trusted by 10,000+ Customers</span>
-        <h1>Moving Made <span class="highlight">Simple &amp; Safe</span></h1>
-        <p class="hero-sub">Professional residential &amp; commercial moving services. Licensed, insured, and ready to handle your move with care.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg">Get Free Quote</a>
-          <a href="tel:+18005550199" class="btn btn-secondary btn-lg">📞 (800) 555-0199</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><strong>15+</strong><span>Years Experience</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><strong>10K+</strong><span>Moves Completed</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><strong>4.9★</strong><span>Average Rating</span></div>
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="star-rating-pill">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">4.9 / 5 &mdash; Over 2,400 Happy Moves</span>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <div class="truck-icon">🚛</div>
-          <div class="hero-card-text">
-            <strong>Fast &amp; Reliable</strong>
-            <span>On-time every time</span>
-          </div>
+      <h1 class="hero-headline">
+        Your Move,<br />
+        <span class="headline-highlight">Handled <em>Perfectly.</em></span>
+      </h1>
+      <p class="hero-subheadline">
+        Professional, stress-free moving services for homes and businesses. Licensed, insured, and trusted by thousands of families across the country.
+      </p>
+      <div class="hero-ctas">
+        <a href="#quote" class="btn-primary">Get Free Quote &rarr;</a>
+        <a href="tel:+18005551234" class="btn-secondary">&#128222; (800) 555-1234</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num-wrap"><span class="stat-number" data-target="15000">0</span><span class="stat-suffix">+</span></div>
+          <span class="stat-label">Moves Completed</span>
         </div>
-        <div class="hero-card hero-card-sm">
-          <div class="shield-icon">🛡️</div>
-          <div class="hero-card-text">
-            <strong>Fully Insured</strong>
-            <span>Your items protected</span>
-          </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num-wrap"><span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span></div>
+          <span class="stat-label">Years Experience</span>
         </div>
-        <div class="hero-blob"></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num-wrap"><span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span></div>
+          <span class="stat-label">Customer Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num-wrap"><span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span></div>
+          <span class="stat-label">Cities Served</span>
+        </div>
       </div>
     </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f9fa"/>
-      </svg>
+    <div class="hero-cards">
+      <div class="floating-card truck-card">
+        <div class="card-icon">&#128667;</div>
+        <div class="card-info">
+          <span class="card-title">Live Tracking</span>
+          <span class="card-sub">Your move, monitored 24/7</span>
+        </div>
+        <div class="card-badge">ACTIVE</div>
+      </div>
+      <div class="floating-card shield-card">
+        <div class="card-icon">&#128737;</div>
+        <div class="card-info">
+          <span class="card-title">Fully Insured</span>
+          <span class="card-sub">$100K coverage included</span>
+        </div>
+        <div class="card-check">&#10003;</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
-  <!-- ── TRUSTED BY ── -->
-  <section class="trusted" id="trusted">
-    <div class="container">
-      <p class="trusted-label">Trusted &amp; Certified By</p>
-      <div class="trusted-logos">
-        <span class="trust-badge">📋 AMSA Member</span>
-        <span class="trust-badge">🏆 BBB Accredited</span>
-        <span class="trust-badge">✅ DOT Licensed</span>
-        <span class="trust-badge">🔒 Fully Insured</span>
-        <span class="trust-badge">⭐ Google Verified</span>
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip" aria-label="Trust badges">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span class="badge-item">&#128203; AMSA Member</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#127942; BBB Accredited</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#9989; DOT Licensed</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128274; Fully Insured</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#11088; Google Verified</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128667; 15+ Years Experience</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128203; AMSA Member</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#127942; BBB Accredited</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#9989; DOT Licensed</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128274; Fully Insured</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#11088; Google Verified</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128667; 15+ Years Experience</span>
+        <span class="badge-sep">&bull;</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="badge-item">&#128203; AMSA Member</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#127942; BBB Accredited</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#9989; DOT Licensed</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128274; Fully Insured</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#11088; Google Verified</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128667; 15+ Years Experience</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128203; AMSA Member</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#127942; BBB Accredited</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#9989; DOT Licensed</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128274; Fully Insured</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#11088; Google Verified</span>
+        <span class="badge-sep">&bull;</span>
+        <span class="badge-item">&#128667; 15+ Years Experience</span>
+        <span class="badge-sep">&bull;</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ── SERVICES ── -->
-  <section class="services section-pad" id="services">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What We Offer</span>
-        <h2>Comprehensive Moving Services</h2>
-        <p>From studio apartments to large offices – we handle every move with professionalism.</p>
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Moving Services Tailored to You</h2>
+        <p class="section-desc">From studio apartments to corporate relocations, we handle every move with precision and care.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🏠</div>
-          <h3>Residential Moving</h3>
-          <p>Apartment, condo, or house – we handle every household move with care and efficiency.</p>
-          <ul><li>Packing &amp; unpacking</li><li>Furniture disassembly</li><li>Safe item handling</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card reveal" style="--delay: 0s">
+          <div class="service-icon-wrap"><span class="service-icon">&#127968;</span></div>
+          <h3 class="service-title">Residential Moving</h3>
+          <p class="service-desc">Safe, efficient moves for apartments, condos, and houses of any size. We treat your home like our own.</p>
+          <ul class="service-features">
+            <li>Full packing &amp; unpacking</li>
+            <li>Furniture disassembly</li>
+            <li>Climate-controlled trucks</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
-        <div class="service-card service-card-featured">
-          <div class="service-badge-top">Most Popular</div>
-          <div class="service-icon">🏢</div>
-          <h3>Commercial Moving</h3>
-          <p>Office relocations completed on your schedule to minimize business downtime.</p>
-          <ul><li>Weekend &amp; after-hours moves</li><li>IT equipment handling</li><li>Modular furniture setup</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card service-card--featured reveal" style="--delay: 0.1s">
+          <div class="featured-label">Most Popular</div>
+          <div class="service-icon-wrap"><span class="service-icon">&#127970;</span></div>
+          <h3 class="service-title">Commercial Moving</h3>
+          <p class="service-desc">Zero-downtime office relocations planned around your schedule. Trusted by 500+ businesses.</p>
+          <ul class="service-features">
+            <li>Weekend &amp; after-hours moves</li>
+            <li>IT equipment handling</li>
+            <li>Project manager assigned</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🗺️</div>
-          <h3>Long Distance Moving</h3>
-          <p>Cross-state relocations with GPS-tracked trucks and real-time updates.</p>
-          <ul><li>GPS tracking</li><li>Dedicated truck option</li><li>Storage solutions</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card reveal" style="--delay: 0.2s">
+          <div class="service-icon-wrap"><span class="service-icon">&#128230;</span></div>
+          <h3 class="service-title">Packing Services</h3>
+          <p class="service-desc">Professional packing with premium materials. Every item wrapped, labeled, and protected perfectly.</p>
+          <ul class="service-features">
+            <li>Custom crating available</li>
+            <li>Art &amp; antique handling</li>
+            <li>Full unpacking service</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">📦</div>
-          <h3>Packing Services</h3>
-          <p>Professional packing with premium materials to protect all your belongings.</p>
-          <ul><li>Full or partial packing</li><li>Custom crating</li><li>Fragile item specialists</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card reveal" style="--delay: 0.3s">
+          <div class="service-icon-wrap"><span class="service-icon">&#128666;</span></div>
+          <h3 class="service-title">Long Distance</h3>
+          <p class="service-desc">Cross-state and cross-country moves with real-time tracking and guaranteed delivery windows.</p>
+          <ul class="service-features">
+            <li>Real-time GPS tracking</li>
+            <li>Guaranteed delivery dates</li>
+            <li>Storage options available</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🏗️</div>
-          <h3>Storage Solutions</h3>
-          <p>Secure, climate-controlled storage for short and long-term needs.</p>
-          <ul><li>Climate controlled</li><li>24/7 security</li><li>Flexible terms</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card reveal" style="--delay: 0.4s">
+          <div class="service-icon-wrap"><span class="service-icon">&#128450;</span></div>
+          <h3 class="service-title">Storage Solutions</h3>
+          <p class="service-desc">Secure, climate-controlled storage for short-term or long-term needs. Month-to-month flexibility.</p>
+          <ul class="service-features">
+            <li>24/7 security monitoring</li>
+            <li>Climate controlled units</li>
+            <li>Easy access scheduling</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🛋️</div>
-          <h3>Specialty Items</h3>
-          <p>Pianos, antiques, fine art – handled by certified specialty movers.</p>
-          <ul><li>Piano moving</li><li>Fine art transport</li><li>Antique handling</li></ul>
-          <a href="#contact" class="service-link">Get Quote →</a>
+        <div class="service-card reveal" style="--delay: 0.5s">
+          <div class="service-icon-wrap"><span class="service-icon">&#127919;</span></div>
+          <h3 class="service-title">Specialty Moves</h3>
+          <p class="service-desc">Pianos, fine art, safes, medical equipment&mdash;we move what others won&rsquo;t. Certified specialists every job.</p>
+          <ul class="service-features">
+            <li>Piano &amp; instrument moving</li>
+            <li>Fine art &amp; antiques</li>
+            <li>Medical equipment</li>
+          </ul>
+          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── WHY US ── -->
-  <section class="why-us section-pad" id="why-us">
-    <div class="container why-inner">
-      <div class="why-text">
-        <span class="section-tag">Why VIPro Moving</span>
-        <h2>The VIPro Difference</h2>
-        <p>We’re not just another moving company. We’re your relocation partner – committed to stress-free moves every time.</p>
-        <div class="why-items">
-          <div class="why-item"><div class="why-icon">🎯</div><div><strong>Precision Planning</strong><p>Every move is planned down to the minute. No surprises, no delays.</p></div></div>
-          <div class="why-item"><div class="why-icon">💪</div><div><strong>Trained Professionals</strong><p>Our team is background-checked, trained, and uniformed.</p></div></div>
-          <div class="why-item"><div class="why-icon">💰</div><div><strong>Transparent Pricing</strong><p>No hidden fees. Your quote is your final price – guaranteed.</p></div></div>
-          <div class="why-item"><div class="why-icon">📱</div><div><strong>Real-Time Updates</strong><p>Track your move live and stay informed every step of the way.</p></div></div>
+  <!-- WHY US SECTION -->
+  <section id="why-us" class="section section--dark">
+    <div class="container">
+      <div class="why-us-layout">
+        <div class="why-us-left reveal">
+          <span class="section-tag">Why Choose VIPro</span>
+          <h2 class="section-title">Moving Done Right,<br />Every Single Time</h2>
+          <p class="section-desc">We don&rsquo;t just move boxes&mdash;we move lives. Our commitment to excellence shows in every interaction, every mile, every delivery.</p>
+          <div class="feature-rows">
+            <div class="feature-row">
+              <div class="feature-icon-box">&#128737;</div>
+              <div class="feature-text">
+                <strong>Full Insurance Coverage</strong>
+                <p>Up to $100,000 coverage on every move. Your belongings are protected, no exceptions.</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box">&#128205;</div>
+              <div class="feature-text">
+                <strong>Real-Time GPS Tracking</strong>
+                <p>Know exactly where your move is at all times via our live tracking dashboard.</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box">&#8987;</div>
+              <div class="feature-text">
+                <strong>On-Time Guarantee</strong>
+                <p>We arrive when we say we will. If we&rsquo;re late, your move gets a 10% discount.</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon-box">&#128176;</div>
+              <div class="feature-text">
+                <strong>No Hidden Fees</strong>
+                <p>Transparent pricing from the start. The quote you get is the price you pay.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="#contact" class="btn btn-primary">Start Your Move Today</a>
-      </div>
-      <div class="why-visual">
-        <div class="why-img-wrap">
-          <div class="why-big-stat"><span class="big-num">98%</span><span class="big-label">Customer Satisfaction</span></div>
-          <div class="why-grid-stats">
-            <div class="mini-stat"><strong>15+</strong><span>Years</span></div>
-            <div class="mini-stat"><strong>50+</strong><span>Cities</span></div>
-            <div class="mini-stat"><strong>200+</strong><span>Staff</span></div>
-            <div class="mini-stat"><strong>0</strong><span>Hidden Fees</span></div>
+        <div class="why-us-right reveal">
+          <div class="big-stat-card">
+            <div class="big-stat-number">
+              <span class="counter" data-target="98">0</span><span class="big-stat-pct">%</span>
+            </div>
+            <p class="big-stat-label">Customer Satisfaction Rate</p>
+            <p class="big-stat-sub">Based on 2,400+ verified reviews</p>
+            <div class="mini-stats-grid">
+              <div class="mini-stat">
+                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="15000">0</span><span class="mini-stat-suf">+</span></div>
+                <span class="mini-stat-label">Moves Done</span>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="15">0</span><span class="mini-stat-suf">+</span></div>
+                <span class="mini-stat-label">Years Active</span>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="50">0</span><span class="mini-stat-suf">+</span></div>
+                <span class="mini-stat-label">Cities</span>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="500">0</span><span class="mini-stat-suf">+</span></div>
+                <span class="mini-stat-label">Companies</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── HOW IT WORKS ── -->
-  <section class="how-it-works section-pad" id="how-it-works">
+  <!-- HOW IT WORKS SECTION -->
+  <section id="how-it-works" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Simple Process</span>
-        <h2>How It Works</h2>
-        <p>Moving with VIPro is easy – just 4 simple steps.</p>
+      <div class="section-header reveal">
+        <span class="section-tag">The Process</span>
+        <h2 class="section-title">Your Move in 4 Simple Steps</h2>
+        <p class="section-desc">We&rsquo;ve streamlined every part of the moving process so you can focus on what matters&mdash;your new beginning.</p>
       </div>
-      <div class="steps-grid">
-        <div class="step"><div class="step-num">1</div><h3>Get a Quote</h3><p>Fill in your details online or call us. Receive a free, no-obligation quote within minutes.</p></div>
-        <div class="step-arrow">→</div>
-        <div class="step"><div class="step-num">2</div><h3>Schedule Your Move</h3><p>Choose your preferred moving date and time. We work around your schedule.</p></div>
-        <div class="step-arrow">→</div>
-        <div class="step"><div class="step-num">3</div><h3>We Handle Everything</h3><p>Our team arrives on time, packs, loads, and transports all your items safely.</p></div>
-        <div class="step-arrow">→</div>
-        <div class="step"><div class="step-num">4</div><h3>Settle In</h3><p>We unload and place items where you want them. You’re home!</p></div>
+      <div class="steps-wrapper">
+        <div class="steps-connector" aria-hidden="true"></div>
+        <div class="steps-grid">
+          <div class="step-card reveal" style="--delay: 0s">
+            <div class="step-number">1</div>
+            <div class="step-icon">&#128203;</div>
+            <h3 class="step-title">Request a Quote</h3>
+            <p class="step-desc">Fill out our simple form or call us. Get a detailed, no-obligation estimate within 2 hours.</p>
+          </div>
+          <div class="step-card reveal" style="--delay: 0.15s">
+            <div class="step-number">2</div>
+            <div class="step-icon">&#128197;</div>
+            <h3 class="step-title">Schedule Your Move</h3>
+            <p class="step-desc">Pick a date that works for you. We&rsquo;re available 7 days a week, including holidays.</p>
+          </div>
+          <div class="step-card reveal" style="--delay: 0.3s">
+            <div class="step-number">3</div>
+            <div class="step-icon">&#128230;</div>
+            <h3 class="step-title">We Pack &amp; Move</h3>
+            <p class="step-desc">Our trained crew arrives on time, packs everything expertly, and transports with full care.</p>
+          </div>
+          <div class="step-card reveal" style="--delay: 0.45s">
+            <div class="step-number">4</div>
+            <div class="step-icon">&#127969;</div>
+            <h3 class="step-title">Settle In</h3>
+            <p class="step-desc">We unload, unpack, and set everything up exactly where you want it. Welcome home.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ── TESTIMONIALS ── -->
-  <section class="testimonials section-pad" id="testimonials">
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="section section--grey">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Reviews</span>
-        <h2>What Our Customers Say</h2>
-        <p>Thousands of happy families and businesses trust VIPro Moving.</p>
+      <div class="section-header reveal">
+        <span class="section-tag">Customer Stories</span>
+        <h2 class="section-title">Don&rsquo;t Take Our Word for It</h2>
+        <p class="section-desc">Real reviews from real customers who trusted VIPro Moving with their most valuable belongings.</p>
       </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“VIPro made our office relocation completely painless. They moved 50 desks and all our IT equipment over one weekend. Incredible team!”</p>
-          <div class="reviewer"><div class="reviewer-avatar">JM</div><div><strong>James Mitchell</strong><span>CEO, TechStart Inc.</span></div></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" style="--delay: 0s">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">&ldquo;Absolutely seamless move from New York to Chicago. The team was professional, careful with all our furniture, and delivered everything on time. Would recommend VIPro to anyone without hesitation.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div class="author-info"><strong>Sarah Rodriguez</strong><span>New York &rarr; Chicago</span></div>
+          </div>
         </div>
-        <div class="review-card review-featured">
-          <div class="stars">★★★★★</div>
-          <p>“I was so stressed about moving cross-country. VIPro handled everything – packing, transport, delivery. Nothing was damaged and they were on time. 10/10!”</p>
-          <div class="reviewer"><div class="reviewer-avatar">SR</div><div><strong>Sarah Rodriguez</strong><span>Homeowner, Austin TX</span></div></div>
+        <div class="testimonial-card testimonial-card--featured reveal" style="--delay: 0.1s">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">&ldquo;We relocated our entire 50-person office and VIPro made it look easy. Zero downtime, everything labeled and placed perfectly. Our employees were back to work Monday morning. Outstanding service.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div class="author-info"><strong>Marcus Kim</strong><span>CEO, Pinnacle Tech</span></div>
+          </div>
         </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Best moving company I’ve used. The pricing was transparent and the crew was professional, fast, and friendly. Will use again!”</p>
-          <div class="reviewer"><div class="reviewer-avatar">DK</div><div><strong>David Kim</strong><span>Apartment Resident</span></div></div>
+        <div class="testimonial-card reveal" style="--delay: 0.2s">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">&ldquo;I was nervous about moving my piano and grandmother&rsquo;s antiques. VIPro&rsquo;s specialty team handled everything with such care. Not a scratch on anything. Worth every penny and then some.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JL</div>
+            <div class="author-info"><strong>Jennifer Liu</strong><span>Austin, TX</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
-  <section class="contact section-pad" id="contact">
-    <div class="container contact-inner">
-      <div class="contact-text">
-        <span class="section-tag">Free Quote</span>
-        <h2>Ready to Move?</h2>
-        <p>Get your free, no-obligation moving quote in under 2 minutes. Our team will contact you within 1 hour.</p>
-        <div class="contact-info">
-          <div class="contact-item"><span class="ci-icon">📞</span><div><strong>Call Us</strong><a href="tel:+18005550199">(800) 555-0199</a></div></div>
-          <div class="contact-item"><span class="ci-icon">📧</span><div><strong>Email Us</strong><a href="mailto:info@vipromoving.com">info@vipromoving.com</a></div></div>
-          <div class="contact-item"><span class="ci-icon">⏰</span><div><strong>Hours</strong><span>Mon–Sun: 7am – 9pm</span></div></div>
+  <!-- QUOTE FORM SECTION -->
+  <section id="quote" class="section">
+    <div class="container">
+      <div class="quote-layout">
+        <div class="quote-left reveal">
+          <span class="section-tag">Free Estimate</span>
+          <h2 class="section-title">Get Your Free Moving Quote</h2>
+          <p class="section-desc">Takes less than 2 minutes. No obligation. We&rsquo;ll send your personalized estimate within 2 hours.</p>
+          <div class="quote-trust-items">
+            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>100% Free &mdash; No credit card required</span></div>
+            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>Response within 2 hours</span></div>
+            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>No obligation to book</span></div>
+            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>Transparent, all-inclusive pricing</span></div>
+          </div>
+        </div>
+        <div class="quote-right reveal">
+          <div class="multi-step-form-wrap">
+            <div class="form-progress-bar-wrap">
+              <div class="form-progress-bar" id="form-progress-fill"></div>
+            </div>
+            <div class="form-step-indicators">
+              <div class="step-indicator active" data-step="1"><div class="step-dot">1</div><span>Contact</span></div>
+              <div class="step-indicator-line"></div>
+              <div class="step-indicator" data-step="2"><div class="step-dot">2</div><span>Move Details</span></div>
+              <div class="step-indicator-line"></div>
+              <div class="step-indicator" data-step="3"><div class="step-dot">3</div><span>Confirm</span></div>
+            </div>
+            <form id="quote-form" novalidate>
+              <div class="form-step active" id="step-1">
+                <h3 class="step-form-title">Let&rsquo;s get started</h3>
+                <p class="step-form-sub">Tell us who you are so we can reach you with your quote.</p>
+                <div class="floating-field">
+                  <input type="text" id="f-name" name="name" required autocomplete="name" placeholder=" " />
+                  <label for="f-name">Full Name *</label>
+                  <span class="field-error" id="err-name"></span>
+                </div>
+                <div class="floating-field">
+                  <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder=" " />
+                  <label for="f-phone">Phone Number *</label>
+                  <span class="field-error" id="err-phone"></span>
+                </div>
+                <div class="floating-field">
+                  <input type="email" id="f-email" name="email" required autocomplete="email" placeholder=" " />
+                  <label for="f-email">Email Address *</label>
+                  <span class="field-error" id="err-email"></span>
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn-form-next" id="next-1">Next Step &rarr;</button>
+                </div>
+              </div>
+              <div class="form-step" id="step-2">
+                <h3 class="step-form-title">Your move details</h3>
+                <p class="step-form-sub">Help us understand the scope of your move.</p>
+                <div class="floating-field">
+                  <input type="text" id="f-from" name="from" required placeholder=" " />
+                  <label for="f-from">Moving From (City, State) *</label>
+                  <span class="field-error" id="err-from"></span>
+                </div>
+                <div class="floating-field">
+                  <input type="text" id="f-to" name="to" required placeholder=" " />
+                  <label for="f-to">Moving To (City, State) *</label>
+                  <span class="field-error" id="err-to"></span>
+                </div>
+                <div class="fields-row">
+                  <div class="floating-field">
+                    <input type="date" id="f-date" name="date" required placeholder=" " />
+                    <label for="f-date" class="date-label">Move Date *</label>
+                    <span class="field-error" id="err-date"></span>
+                  </div>
+                  <div class="floating-field">
+                    <select id="f-type" name="type" required>
+                      <option value="" disabled selected></option>
+                      <option value="studio">Studio / 1-Bed</option>
+                      <option value="twobdr">2 Bedroom</option>
+                      <option value="threebdr">3 Bedroom</option>
+                      <option value="house">Large House (4+)</option>
+                      <option value="office">Office / Commercial</option>
+                      <option value="specialty">Specialty Items</option>
+                    </select>
+                    <label for="f-type">Move Type *</label>
+                    <span class="field-error" id="err-type"></span>
+                  </div>
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn-form-back" id="back-2">&larr; Back</button>
+                  <button type="button" class="btn-form-next" id="next-2">Submit Request &rarr;</button>
+                </div>
+              </div>
+              <div class="form-step" id="step-3">
+                <div class="success-animation">
+                  <div class="success-circle"><div class="success-check">&#10003;</div></div>
+                  <h3 class="success-title">Quote Request Sent!</h3>
+                  <p class="success-msg">Thank you! We&rsquo;ve received your request and a VIPro specialist will contact you within <strong>2 hours</strong> with your personalized estimate.</p>
+                  <div class="success-details">
+                    <div class="success-detail-item"><span>&#128222;</span><span>Expect a call at the number you provided</span></div>
+                    <div class="success-detail-item"><span>&#128231;</span><span>Confirmation email sent to your inbox</span></div>
+                  </div>
+                  <button type="button" class="btn-primary" id="reset-form">Start New Quote</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <form class="quote-form" id="quoteForm" onsubmit="submitForm(event)">
-        <h3>Get Your Free Quote</h3>
-        <div class="form-row">
-          <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" placeholder="John" required /></div>
-          <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" placeholder="Doe" required /></div>
-        </div>
-        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required /></div>
-        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="(555) 000-0000" required /></div>
-        <div class="form-row">
-          <div class="form-group"><label for="fromCity">Moving From</label><input type="text" id="fromCity" placeholder="City, State" required /></div>
-          <div class="form-group"><label for="toCity">Moving To</label><input type="text" id="toCity" placeholder="City, State" required /></div>
-        </div>
-        <div class="form-group"><label for="moveDate">Preferred Move Date</label><input type="date" id="moveDate" required /></div>
-        <div class="form-group"><label for="moveType">Move Type</label><select id="moveType"><option value="">Select a service...</option><option>Residential Moving</option><option>Commercial Moving</option><option>Long Distance Moving</option><option>Packing Services</option><option>Storage Solutions</option></select></div>
-        <button type="submit" class="btn btn-primary btn-lg btn-full">Get My Free Quote 🚛</button>
-        <p class="form-note">✅ No commitment required · Response within 1 hour</p>
-      </form>
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="logo logo-light"><span class="logo-vi">VI</span><span class="logo-pro">Pro</span><span class="logo-sub">MOVING</span></a>
-        <p>Your trusted moving partner since 2009. Licensed, insured, and committed to excellence.</p>
-        <div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a></div>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section section--dark">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-left reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">We&rsquo;re Here When You Need Us</h2>
+          <p class="section-desc">Have questions before booking? Our moving specialists are standing by to help.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon-pill">&#128222;</div>
+              <div class="contact-item-text"><strong>Call Us</strong><a href="tel:+18005551234">(800) 555-1234</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-pill">&#128231;</div>
+              <div class="contact-item-text"><strong>Email Us</strong><a href="mailto:hello@vipromovingco.com">hello@vipromovingco.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-pill">&#128336;</div>
+              <div class="contact-item-text"><strong>Hours</strong><span>Mon &ndash; Sat: 7am &ndash; 8pm EST</span><span>Sunday: 9am &ndash; 5pm EST</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-pill">&#128205;</div>
+              <div class="contact-item-text"><strong>Headquarters</strong><span>1250 Moving Ave, Suite 400</span><span>New York, NY 10001</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="contact-card">
+            <h3>Prefer to chat?</h3>
+            <p>Our team is available right now to answer your questions and help you plan your perfect move.</p>
+            <a href="tel:+18005551234" class="btn-primary btn-full">&#128222; Call Now &mdash; It&rsquo;s Free</a>
+            <div class="contact-divider"><span>or</span></div>
+            <a href="mailto:hello@vipromovingco.com" class="btn-outline btn-full">Send Us an Email</a>
+            <div class="contact-response-note">
+              <span class="response-dot"></span>
+              Average response time: <strong>under 15 minutes</strong>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer-links"><h4>Services</h4><ul><li><a href="#services">Residential Moving</a></li><li><a href="#services">Commercial Moving</a></li><li><a href="#services">Long Distance</a></li><li><a href="#services">Packing &amp; Storage</a></li></ul></div>
-      <div class="footer-links"><h4>Company</h4><ul><li><a href="#why-us">About Us</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Contact</a></li><li><a href="#">Careers</a></li></ul></div>
-      <div class="footer-links"><h4>Contact</h4><ul><li><a href="tel:+18005550199">📞 (800) 555-0199</a></li><li><a href="mailto:info@vipromoving.com">✉️ info@vipromoving.com</a></li><li><span>⏰ Mon–Sun: 7am – 9pm</span></li></ul></div>
     </div>
-    <div class="footer-bottom"><div class="container"><span>© 2025 VIPro Moving. All rights reserved.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span></div></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="#" class="footer-logo"><span class="logo-vi">VI</span><span class="logo-pro">Pro</span>&nbsp;<span class="logo-moving">MOVING</span></a>
+          <p class="footer-tagline">Moving lives forward with care, precision, and a smile &mdash; since 2009.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" class="social-link" aria-label="Twitter X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Residential Moving</a></li>
+            <li><a href="#services">Commercial Moving</a></li>
+            <li><a href="#services">Packing Services</a></li>
+            <li><a href="#services">Long Distance</a></li>
+            <li><a href="#services">Storage Solutions</a></li>
+            <li><a href="#services">Specialty Moves</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#why-us">About VIPro</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Press</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links footer-contact-links">
+            <li><a href="tel:+18005551234">&#128222; (800) 555-1234</a></li>
+            <li><a href="mailto:hello@vipromovingco.com">&#128231; hello@vipromovingco.com</a></li>
+            <li><span>&#128205; 1250 Moving Ave, Suite 400<br />New York, NY 10001</span></li>
+            <li><span>&#128336; Mon&ndash;Sat 7am&ndash;8pm EST</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 VIPro Moving Co. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a><span>&middot;</span>
+          <a href="#">Terms of Service</a><span>&middot;</span>
+          <a href="#">DOT #1234567</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <div class="toast" id="toast"><span>🎉</span><div><strong>Quote Request Sent!</strong><p>We’ll contact you within 1 hour.</p></div></div>
+  <!-- FLOATING CTA BUTTON -->
+  <div class="floating-cta" id="floating-cta">
+    <a href="#quote" class="floating-cta-btn">
+      <span class="floating-cta-truck">&#128667;</span>
+      <span>Get Free Quote</span>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">&#10003;</div>
+    <div class="toast-content">
+      <strong>Quote Request Sent!</strong>
+      <span>We&rsquo;ll be in touch within 2 hours.</span>
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Close notification">&times;</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
