@@ -243,7 +243,7 @@ img{display:block;max-width:100%}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .nav-links{position:fixed;top:68px;left:0;right:0;background:rgba(12,17,24,.97);backdrop-filter:blur(20px);flex-direction:column;padding:20px 24px;gap:18px;align-items:flex-start;transform:translateY(-110%);transition:transform var(--tr);border-bottom:1px solid var(--border)}
+  .nav-links{position:fixed;top:68px;left:0;right:0;background:rgba(12,17,24,.97);backdrop-filter:blur(20px);flex-direction:column;padding:20px 24px;gap:18px;align-items:flex-start;transform:translateY(calc(-100% - 68px));transition:transform .35s ease;border-bottom:1px solid var(--border)}
   .nav-links.open{transform:translateY(0)}
   .hamburger{display:flex}
   .logo-brand{font-size:17px}
