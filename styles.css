@@ -300,3 +300,20 @@ img{display:block;max-width:100%}
 .bolge-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:40px}
 .bolge-item{display:block;padding:12px 8px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);text-align:center;font-family:var(--fd);font-size:13px;font-weight:600;color:var(--text);letter-spacing:.3px;transition:background var(--tr),color var(--tr),border-color var(--tr)}
 .bolge-item:hover{background:var(--amber-d);color:var(--amber);border-color:var(--amber)}
+
+/* ── NAP Bloğu ── */
+.nap-block{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:16px 24px;text-align:center;font-size:14px;color:var(--muted);margin:0 0 0 0}
+.nap-block strong{color:var(--amber);font-family:var(--fd)}
+
+/* ── FAQ Section ── */
+.faq-section{padding:72px 0;background:var(--bg)}
+.faq-list{margin-top:36px;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.faq-q{width:100%;background:none;border:none;padding:18px 20px;text-align:left;font-family:var(--fd);font-size:15px;font-weight:600;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:color var(--tr)}
+.faq-q:hover{color:var(--amber)}
+.faq-q .faq-icon{flex-shrink:0;font-size:18px;transition:transform .3s}
+.faq-item.open .faq-q{color:var(--amber)}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-item.open .faq-a{max-height:200px}
+.faq-a p{padding:0 20px 18px;color:var(--muted);line-height:1.75;font-size:14px}
