@@ -1,622 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIPro Moving — Professional Moving Services</title>
-  <meta name="description" content="VIPro Moving offers professional, reliable moving services. AMSA member, BBB accredited, DOT licensed. Get your free quote today." />
+  <title>Tolga Oto Kurtarma – 7/24 Profesyonel Çekici Hizmeti</title>
+  <meta name="description" content="Tinyhouse, tekne, karavan, forklift ve özel araç çekimi. İzmir ve Türkiye geneli 7/24 oto kurtarma hizmeti. Hemen ara: +90 554 852 52 69" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- SCROLL PROGRESS BAR -->
-  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
-
-  <!-- NAVBAR -->
-  <header id="navbar">
-    <nav class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-vi">VI</span><span class="logo-pro">Pro</span>&nbsp;<span class="logo-moving">MOVING</span>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-beacon"></span>
+        <span class="logo-text">TOLGA <span class="logo-accent">OTO KURTARMA</span></span>
       </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#why-us" class="nav-link">Why Us</a></li>
-        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="#quote" class="nav-cta-btn">Get Free Quote</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#neden-biz">Neden Biz</a>
+        <a href="#nasil-calisir">Nasıl Çalışır</a>
+        <a href="#iletisim">İletişim</a>
+        <a href="tel:+905548525269" class="nav-phone">
+          <span class="phone-dot"></span>
+          +90 554 852 52 69
+        </a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
       </button>
-    </nav>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <div class="hero-blobs">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
+  <section class="hero" id="anasayfa">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="beacon-ring r1"></div>
+      <div class="beacon-ring r2"></div>
+      <div class="beacon-ring r3"></div>
+      <div class="amber-strip s1"></div>
+      <div class="amber-strip s2"></div>
     </div>
     <div class="hero-content">
       <div class="hero-badge">
-        <div class="star-rating-pill">
-          <span class="stars">★★★★★</span>
-          <span class="rating-text">4.9 / 5 &mdash; Over 2,400 Happy Moves</span>
-        </div>
+        <span class="badge-dot"></span>
+        7/24 AKTİF — ŞU AN HİZMET VERİYORUZ
       </div>
-      <h1 class="hero-headline">
-        Your Move,<br />
-        <span class="headline-highlight">Handled <em>Perfectly.</em></span>
+      <h1 class="hero-title">
+        <span class="hero-name">TOLGA</span>
+        <span class="hero-sub-title">OTO KURTARMA</span>
       </h1>
-      <p class="hero-subheadline">
-        Professional, stress-free moving services for homes and businesses. Licensed, insured, and trusted by thousands of families across the country.
+      <p class="hero-desc">
+        Tinyhouse'dan tekneye, forkliftden karavan taşımaya kadar<br/>
+        <strong>her boyut, her ağırlık</strong> — güvenle çekeriz.
       </p>
       <div class="hero-ctas">
-        <a href="#quote" class="btn-primary">Get Free Quote &rarr;</a>
-        <a href="tel:+18005551234" class="btn-secondary">&#128222; (800) 555-1234</a>
+        <a href="tel:+905548525269" class="cta-primary">
+          <span class="cta-icon">📞</span>
+          Hemen Ara
+          <span class="cta-num">0554 852 52 69</span>
+        </a>
+        <a href="https://wa.me/905548525269" class="cta-secondary" target="_blank" rel="noopener">
+          <span>WhatsApp'tan Yaz</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
       </div>
       <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-num-wrap"><span class="stat-number" data-target="15000">0</span><span class="stat-suffix">+</span></div>
-          <span class="stat-label">Moves Completed</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num-wrap"><span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span></div>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num-wrap"><span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span></div>
-          <span class="stat-label">Customer Satisfaction</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num-wrap"><span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span></div>
-          <span class="stat-label">Cities Served</span>
-        </div>
+        <div class="hstat"><strong class="counter" data-target="500">0</strong><span>+ Başarılı Taşıma</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong class="counter" data-target="9">0</strong><span>Farklı Hizmet</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>7/24</strong><span>Kesintisiz Hizmet</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong class="counter" data-target="81">0</strong><span>İl Hizmet</span></div>
       </div>
     </div>
-    <div class="hero-cards">
-      <div class="floating-card truck-card">
-        <div class="card-icon">&#128667;</div>
-        <div class="card-info">
-          <span class="card-title">Live Tracking</span>
-          <span class="card-sub">Your move, monitored 24/7</span>
-        </div>
-        <div class="card-badge">ACTIVE</div>
-      </div>
-      <div class="floating-card shield-card">
-        <div class="card-icon">&#128737;</div>
-        <div class="card-info">
-          <span class="card-title">Fully Insured</span>
-          <span class="card-sub">$100K coverage included</span>
-        </div>
-        <div class="card-check">&#10003;</div>
+    <div class="hero-truck">
+      <div class="truck-emoji">🚛</div>
+      <div class="truck-lights">
+        <span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
     <div class="hero-scroll-hint">
-      <span>Scroll to explore</span>
+      <span>Aşağı Kaydır</span>
       <div class="scroll-arrow"></div>
     </div>
   </section>
 
-  <!-- MARQUEE STRIP -->
-  <div class="marquee-strip" aria-label="Trust badges">
+  <div class="marquee-wrap">
     <div class="marquee-track">
       <div class="marquee-content">
-        <span class="badge-item">&#128203; AMSA Member</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#127942; BBB Accredited</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#9989; DOT Licensed</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128274; Fully Insured</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#11088; Google Verified</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128667; 15+ Years Experience</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128203; AMSA Member</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#127942; BBB Accredited</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#9989; DOT Licensed</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128274; Fully Insured</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#11088; Google Verified</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128667; 15+ Years Experience</span>
-        <span class="badge-sep">&bull;</span>
+        <span>🏠 Tinyhouse Taşıma</span><span class="msep">▸</span>
+        <span>⛵ Tekne Taşıma</span><span class="msep">▸</span>
+        <span>🚐 Karavan Taşıma</span><span class="msep">▸</span>
+        <span>🚌 Servis Araçları</span><span class="msep">▸</span>
+        <span>🔧 Aparatlı Çekim</span><span class="msep">▸</span>
+        <span>⚙️ Şanziman Kilitli Araç</span><span class="msep">▸</span>
+        <span>🛞 Lastik Kopması</span><span class="msep">▸</span>
+        <span>🏗️ Forklift Taşıma</span><span class="msep">▸</span>
+        <span>🔝 Manlift Transefi</span><span class="msep">▸</span>
       </div>
       <div class="marquee-content" aria-hidden="true">
-        <span class="badge-item">&#128203; AMSA Member</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#127942; BBB Accredited</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#9989; DOT Licensed</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128274; Fully Insured</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#11088; Google Verified</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128667; 15+ Years Experience</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128203; AMSA Member</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#127942; BBB Accredited</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#9989; DOT Licensed</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128274; Fully Insured</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#11088; Google Verified</span>
-        <span class="badge-sep">&bull;</span>
-        <span class="badge-item">&#128667; 15+ Years Experience</span>
-        <span class="badge-sep">&bull;</span>
+        <span>🏠 Tinyhouse Taşıma</span><span class="msep">▸</span>
+        <span>⛵ Tekne Taşıma</span><span class="msep">▸</span>
+        <span>🚐 Karavan Taşıma</span><span class="msep">▸</span>
+        <span>🚌 Servis Araçları</span><span class="msep">▸</span>
+        <span>🔧 Aparatlı Çekim</span><span class="msep">▸</span>
+        <span>⚙️ Şanziman Kilitli Araç</span><span class="msep">▸</span>
+        <span>🛞 Lastik Kopması</span><span class="msep">▸</span>
+        <span>🏗️ Forklift Taşıma</span><span class="msep">▸</span>
+        <span>🔝 Manlift Transefi</span><span class="msep">▸</span>
       </div>
     </div>
   </div>
 
-  <!-- SERVICES SECTION -->
-  <section id="services" class="section">
+  <section class="services" id="hizmetler">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What We Do</span>
-        <h2 class="section-title">Moving Services Tailored to You</h2>
-        <p class="section-desc">From studio apartments to corporate relocations, we handle every move with precision and care.</p>
+      <div class="section-header">
+        <span class="section-tag">Hizmetlerimiz</span>
+        <h2>Her Araca <span class="text-amber">Çözüm Üretiyoruz</span></h2>
+        <p>Standart çekicilerin kaldıramadığı, taşıyamadığı her şeyi taşıyoruz.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card reveal" style="--delay: 0s">
-          <div class="service-icon-wrap"><span class="service-icon">&#127968;</span></div>
-          <h3 class="service-title">Residential Moving</h3>
-          <p class="service-desc">Safe, efficient moves for apartments, condos, and houses of any size. We treat your home like our own.</p>
-          <ul class="service-features">
-            <li>Full packing &amp; unpacking</li>
-            <li>Furniture disassembly</li>
-            <li>Climate-controlled trucks</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+        <div class="service-card" style="--i:0"><div class="sc-num">01</div><div class="sc-icon">🏠</div><h3>Tinyhouse Taşıma</h3><p>Küçük evlerin büyük taşınması. Özel ekipman ve aparatlarla güvenli nakliye.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:1"><div class="sc-num">02</div><div class="sc-icon">⛵</div><h3>Tekne Taşıma</h3><p>Her ebatta tekne ve deniz aracı için profesyonel flatbed çekici hizmeti.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card featured" style="--i:2"><div class="sc-badge">En Çok Talep</div><div class="sc-num">03</div><div class="sc-icon">🚐</div><h3>Karavan Taşıma</h3><p>Karavan ve çekme karavan nakliyesi. Uzun mesafe dahil tüm güzergahlara hizmet.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:3"><div class="sc-num">04</div><div class="sc-icon">🚌</div><h3>Servis Araçları</h3><p>Minibüs, midibüs ve servis araçlarının kazasız çekimi ve taşınması.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:4"><div class="sc-num">05</div><div class="sc-icon">🔧</div><h3>Aparatlı Özel Çekim</h3><p>Standart yöntemlerle çekilemeyen araçlar için özel aparat ve ekipmanla müdahale.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:5"><div class="sc-num">06</div><div class="sc-icon">⚙️</div><h3>Şanziman & Defransiyel Kilitli</h3><p>Şanzıman veya defransiyel kilitlenmiş araçlarda hasar vermeden özel çekim tekniği.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:6"><div class="sc-num">07</div><div class="sc-icon">🛞</div><h3>Lastiği Kopmuş Araç</h3><p>Lastik patlaması ya da jant hasarı olan araçlar güvenle platforma alınır.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:7"><div class="sc-num">08</div><div class="sc-icon">🏗️</div><h3>Forklift Taşıma</h3><p>Ağır iş makineleri ve forkliftler için güvenli platform taşımacılığı.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+        <div class="service-card" style="--i:8"><div class="sc-num">09</div><div class="sc-icon">🔝</div><h3>Manlift & Transefi</h3><p>Yüksek erişim platformları, manlift ve transefi ekipmanlarının nakliyesi.</p><a href="tel:+905548525269" class="sc-cta">Hemen Ara →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us" id="neden-biz">
+    <div class="container why-container">
+      <div class="why-left">
+        <span class="section-tag">Neden Tolga?</span>
+        <h2>Diğerleri "Hayır" Dediğinde<br/><span class="text-amber">Biz Çözeriz</span></h2>
+        <p class="why-desc">Standart çekicilerin reddettiği işleri biz alırız. Özel ekipman, tecrübeli ekip ve hiçbir zaman "yapamayız" demeyen bir yaklaşım.</p>
+        <div class="why-items">
+          <div class="why-item reveal"><div class="wi-icon">🎯</div><div><strong>Özel Ekipman</strong><p>Tüm araç tipleri için uygun aparat ve platformlar.</p></div></div>
+          <div class="why-item reveal"><div class="wi-icon">⚡</div><div><strong>Hızlı Müdahale</strong><p>Aramanızdan itibaren en kısa sürede sahada oluyoruz.</p></div></div>
+          <div class="why-item reveal"><div class="wi-icon">🛡️</div><div><strong>Hasarsız Çekim</strong><p>Aracınıza zarar vermeden, doğru teknikle yapılır.</p></div></div>
+          <div class="why-item reveal"><div class="wi-icon">🌍</div><div><strong>Türkiye Geneli</strong><p>İzmir merkezli, 81 ile hizmet kapasitesi.</p></div></div>
         </div>
-        <div class="service-card service-card--featured reveal" style="--delay: 0.1s">
-          <div class="featured-label">Most Popular</div>
-          <div class="service-icon-wrap"><span class="service-icon">&#127970;</span></div>
-          <h3 class="service-title">Commercial Moving</h3>
-          <p class="service-desc">Zero-downtime office relocations planned around your schedule. Trusted by 500+ businesses.</p>
-          <ul class="service-features">
-            <li>Weekend &amp; after-hours moves</li>
-            <li>IT equipment handling</li>
-            <li>Project manager assigned</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
-        </div>
-        <div class="service-card reveal" style="--delay: 0.2s">
-          <div class="service-icon-wrap"><span class="service-icon">&#128230;</span></div>
-          <h3 class="service-title">Packing Services</h3>
-          <p class="service-desc">Professional packing with premium materials. Every item wrapped, labeled, and protected perfectly.</p>
-          <ul class="service-features">
-            <li>Custom crating available</li>
-            <li>Art &amp; antique handling</li>
-            <li>Full unpacking service</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
-        </div>
-        <div class="service-card reveal" style="--delay: 0.3s">
-          <div class="service-icon-wrap"><span class="service-icon">&#128666;</span></div>
-          <h3 class="service-title">Long Distance</h3>
-          <p class="service-desc">Cross-state and cross-country moves with real-time tracking and guaranteed delivery windows.</p>
-          <ul class="service-features">
-            <li>Real-time GPS tracking</li>
-            <li>Guaranteed delivery dates</li>
-            <li>Storage options available</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
-        </div>
-        <div class="service-card reveal" style="--delay: 0.4s">
-          <div class="service-icon-wrap"><span class="service-icon">&#128450;</span></div>
-          <h3 class="service-title">Storage Solutions</h3>
-          <p class="service-desc">Secure, climate-controlled storage for short-term or long-term needs. Month-to-month flexibility.</p>
-          <ul class="service-features">
-            <li>24/7 security monitoring</li>
-            <li>Climate controlled units</li>
-            <li>Easy access scheduling</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
-        </div>
-        <div class="service-card reveal" style="--delay: 0.5s">
-          <div class="service-icon-wrap"><span class="service-icon">&#127919;</span></div>
-          <h3 class="service-title">Specialty Moves</h3>
-          <p class="service-desc">Pianos, fine art, safes, medical equipment&mdash;we move what others won&rsquo;t. Certified specialists every job.</p>
-          <ul class="service-features">
-            <li>Piano &amp; instrument moving</li>
-            <li>Fine art &amp; antiques</li>
-            <li>Medical equipment</li>
-          </ul>
-          <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </div>
+      <div class="why-right">
+        <div class="why-card">
+          <div class="why-big"><span class="counter" data-target="100">0</span>%</div>
+          <div class="why-big-label">Müşteri Memnuniyeti</div>
+          <div class="why-mini-grid">
+            <div class="wm"><strong class="counter" data-target="500">0</strong><span>+ Taşıma</span></div>
+            <div class="wm"><strong>7/24</strong><span>Hizmet</span></div>
+            <div class="wm"><strong class="counter" data-target="81">0</strong><span>İl</span></div>
+            <div class="wm"><strong class="counter" data-target="9">0</strong><span>Hizmet Tipi</span></div>
+          </div>
+          <a href="tel:+905548525269" class="why-cta-btn">📞 0554 852 52 69</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US SECTION -->
-  <section id="why-us" class="section section--dark">
+  <section class="how-it-works" id="nasil-calisir">
     <div class="container">
-      <div class="why-us-layout">
-        <div class="why-us-left reveal">
-          <span class="section-tag">Why Choose VIPro</span>
-          <h2 class="section-title">Moving Done Right,<br />Every Single Time</h2>
-          <p class="section-desc">We don&rsquo;t just move boxes&mdash;we move lives. Our commitment to excellence shows in every interaction, every mile, every delivery.</p>
-          <div class="feature-rows">
-            <div class="feature-row">
-              <div class="feature-icon-box">&#128737;</div>
-              <div class="feature-text">
-                <strong>Full Insurance Coverage</strong>
-                <p>Up to $100,000 coverage on every move. Your belongings are protected, no exceptions.</p>
-              </div>
-            </div>
-            <div class="feature-row">
-              <div class="feature-icon-box">&#128205;</div>
-              <div class="feature-text">
-                <strong>Real-Time GPS Tracking</strong>
-                <p>Know exactly where your move is at all times via our live tracking dashboard.</p>
-              </div>
-            </div>
-            <div class="feature-row">
-              <div class="feature-icon-box">&#8987;</div>
-              <div class="feature-text">
-                <strong>On-Time Guarantee</strong>
-                <p>We arrive when we say we will. If we&rsquo;re late, your move gets a 10% discount.</p>
-              </div>
-            </div>
-            <div class="feature-row">
-              <div class="feature-icon-box">&#128176;</div>
-              <div class="feature-text">
-                <strong>No Hidden Fees</strong>
-                <p>Transparent pricing from the start. The quote you get is the price you pay.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="why-us-right reveal">
-          <div class="big-stat-card">
-            <div class="big-stat-number">
-              <span class="counter" data-target="98">0</span><span class="big-stat-pct">%</span>
-            </div>
-            <p class="big-stat-label">Customer Satisfaction Rate</p>
-            <p class="big-stat-sub">Based on 2,400+ verified reviews</p>
-            <div class="mini-stats-grid">
-              <div class="mini-stat">
-                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="15000">0</span><span class="mini-stat-suf">+</span></div>
-                <span class="mini-stat-label">Moves Done</span>
-              </div>
-              <div class="mini-stat">
-                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="15">0</span><span class="mini-stat-suf">+</span></div>
-                <span class="mini-stat-label">Years Active</span>
-              </div>
-              <div class="mini-stat">
-                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="50">0</span><span class="mini-stat-suf">+</span></div>
-                <span class="mini-stat-label">Cities</span>
-              </div>
-              <div class="mini-stat">
-                <div class="mini-stat-num-wrap"><span class="mini-stat-num counter" data-target="500">0</span><span class="mini-stat-suf">+</span></div>
-                <span class="mini-stat-label">Companies</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="section-header">
+        <span class="section-tag">Süreç</span>
+        <h2>4 Adımda <span class="text-amber">Kurtarma</span></h2>
+        <p>Sizi yolda bırakmıyoruz — hızlı, güvenli, profesyonel.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-n">01</div><div class="step-icon">📞</div><h3>Arayın</h3><p>+90 554 852 52 69 numarayı arayın. 7/24 açığız.</p></div>
+        <div class="step-conn"></div>
+        <div class="step reveal"><div class="step-n">02</div><div class="step-icon">📍</div><h3>Konum Bildirin</h3><p>Nerede olduğunuzu ve sorunun ne olduğunu anlatın.</p></div>
+        <div class="step-conn"></div>
+        <div class="step reveal"><div class="step-n">03</div><div class="step-icon">🚛</div><h3>Ekibimiz Yolda</h3><p>En uygun araç ve ekipmanla en kısa sürede yanınızdayız.</p></div>
+        <div class="step-conn"></div>
+        <div class="step reveal"><div class="step-n">04</div><div class="step-icon">✅</div><h3>Sorun Çözüldü</h3><p>Aracınız güvenle hedef noktaya teslim edilir.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS SECTION -->
-  <section id="how-it-works" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">The Process</span>
-        <h2 class="section-title">Your Move in 4 Simple Steps</h2>
-        <p class="section-desc">We&rsquo;ve streamlined every part of the moving process so you can focus on what matters&mdash;your new beginning.</p>
-      </div>
-      <div class="steps-wrapper">
-        <div class="steps-connector" aria-hidden="true"></div>
-        <div class="steps-grid">
-          <div class="step-card reveal" style="--delay: 0s">
-            <div class="step-number">1</div>
-            <div class="step-icon">&#128203;</div>
-            <h3 class="step-title">Request a Quote</h3>
-            <p class="step-desc">Fill out our simple form or call us. Get a detailed, no-obligation estimate within 2 hours.</p>
-          </div>
-          <div class="step-card reveal" style="--delay: 0.15s">
-            <div class="step-number">2</div>
-            <div class="step-icon">&#128197;</div>
-            <h3 class="step-title">Schedule Your Move</h3>
-            <p class="step-desc">Pick a date that works for you. We&rsquo;re available 7 days a week, including holidays.</p>
-          </div>
-          <div class="step-card reveal" style="--delay: 0.3s">
-            <div class="step-number">3</div>
-            <div class="step-icon">&#128230;</div>
-            <h3 class="step-title">We Pack &amp; Move</h3>
-            <p class="step-desc">Our trained crew arrives on time, packs everything expertly, and transports with full care.</p>
-          </div>
-          <div class="step-card reveal" style="--delay: 0.45s">
-            <div class="step-number">4</div>
-            <div class="step-icon">&#127969;</div>
-            <h3 class="step-title">Settle In</h3>
-            <p class="step-desc">We unload, unpack, and set everything up exactly where you want it. Welcome home.</p>
+  <section class="contact" id="iletisim">
+    <div class="container contact-grid">
+      <div class="contact-left">
+        <span class="section-tag">İletişim</span>
+        <h2>Şu An mı <span class="text-amber">İhtiyacınız Var?</span></h2>
+        <p>Beklemeyin. Hemen arayın, birkaç dakika içinde yoldayız.</p>
+        <a href="tel:+905548525269" class="big-phone">
+          <span class="bp-label">7/24 ÇAĞRI HATTI</span>
+          <span class="bp-num">0554 852 52 69</span>
+          <span class="bp-sub">Tolga — Oto Kurtarma</span>
+        </a>
+        <div class="contact-alts">
+          <a href="https://wa.me/905548525269" class="ca-btn" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp ile Yaz
+          </a>
+          <div class="ca-info">
+            <span>📍 İzmir merkezli, Türkiye geneli hizmet</span>
+            <span>🕐 7 gün 24 saat — hiç kapanmıyoruz</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials" class="section section--grey">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Customer Stories</span>
-        <h2 class="section-title">Don&rsquo;t Take Our Word for It</h2>
-        <p class="section-desc">Real reviews from real customers who trusted VIPro Moving with their most valuable belongings.</p>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal" style="--delay: 0s">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">&ldquo;Absolutely seamless move from New York to Chicago. The team was professional, careful with all our furniture, and delivered everything on time. Would recommend VIPro to anyone without hesitation.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">SR</div>
-            <div class="author-info"><strong>Sarah Rodriguez</strong><span>New York &rarr; Chicago</span></div>
-          </div>
-        </div>
-        <div class="testimonial-card testimonial-card--featured reveal" style="--delay: 0.1s">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">&ldquo;We relocated our entire 50-person office and VIPro made it look easy. Zero downtime, everything labeled and placed perfectly. Our employees were back to work Monday morning. Outstanding service.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">MK</div>
-            <div class="author-info"><strong>Marcus Kim</strong><span>CEO, Pinnacle Tech</span></div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal" style="--delay: 0.2s">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-text">&ldquo;I was nervous about moving my piano and grandmother&rsquo;s antiques. VIPro&rsquo;s specialty team handled everything with such care. Not a scratch on anything. Worth every penny and then some.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">JL</div>
-            <div class="author-info"><strong>Jennifer Liu</strong><span>Austin, TX</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUOTE FORM SECTION -->
-  <section id="quote" class="section">
-    <div class="container">
-      <div class="quote-layout">
-        <div class="quote-left reveal">
-          <span class="section-tag">Free Estimate</span>
-          <h2 class="section-title">Get Your Free Moving Quote</h2>
-          <p class="section-desc">Takes less than 2 minutes. No obligation. We&rsquo;ll send your personalized estimate within 2 hours.</p>
-          <div class="quote-trust-items">
-            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>100% Free &mdash; No credit card required</span></div>
-            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>Response within 2 hours</span></div>
-            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>No obligation to book</span></div>
-            <div class="trust-item"><span class="trust-icon">&#10003;</span><span>Transparent, all-inclusive pricing</span></div>
-          </div>
-        </div>
-        <div class="quote-right reveal">
-          <div class="multi-step-form-wrap">
-            <div class="form-progress-bar-wrap">
-              <div class="form-progress-bar" id="form-progress-fill"></div>
-            </div>
-            <div class="form-step-indicators">
-              <div class="step-indicator active" data-step="1"><div class="step-dot">1</div><span>Contact</span></div>
-              <div class="step-indicator-line"></div>
-              <div class="step-indicator" data-step="2"><div class="step-dot">2</div><span>Move Details</span></div>
-              <div class="step-indicator-line"></div>
-              <div class="step-indicator" data-step="3"><div class="step-dot">3</div><span>Confirm</span></div>
-            </div>
-            <form id="quote-form" novalidate>
-              <div class="form-step active" id="step-1">
-                <h3 class="step-form-title">Let&rsquo;s get started</h3>
-                <p class="step-form-sub">Tell us who you are so we can reach you with your quote.</p>
-                <div class="floating-field">
-                  <input type="text" id="f-name" name="name" required autocomplete="name" placeholder=" " />
-                  <label for="f-name">Full Name *</label>
-                  <span class="field-error" id="err-name"></span>
-                </div>
-                <div class="floating-field">
-                  <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder=" " />
-                  <label for="f-phone">Phone Number *</label>
-                  <span class="field-error" id="err-phone"></span>
-                </div>
-                <div class="floating-field">
-                  <input type="email" id="f-email" name="email" required autocomplete="email" placeholder=" " />
-                  <label for="f-email">Email Address *</label>
-                  <span class="field-error" id="err-email"></span>
-                </div>
-                <div class="form-nav">
-                  <button type="button" class="btn-form-next" id="next-1">Next Step &rarr;</button>
-                </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+          <h3>Teklif / Bilgi Talep Et</h3>
+          <div class="step-form" id="stepForm">
+            <div class="form-step active" data-step="1">
+              <div class="fstep-head">
+                <span class="fstep-label">Adım 1 / 2</span>
+                <div class="fstep-bar"><div class="fstep-fill" style="width:50%"></div></div>
               </div>
-              <div class="form-step" id="step-2">
-                <h3 class="step-form-title">Your move details</h3>
-                <p class="step-form-sub">Help us understand the scope of your move.</p>
-                <div class="floating-field">
-                  <input type="text" id="f-from" name="from" required placeholder=" " />
-                  <label for="f-from">Moving From (City, State) *</label>
-                  <span class="field-error" id="err-from"></span>
-                </div>
-                <div class="floating-field">
-                  <input type="text" id="f-to" name="to" required placeholder=" " />
-                  <label for="f-to">Moving To (City, State) *</label>
-                  <span class="field-error" id="err-to"></span>
-                </div>
-                <div class="fields-row">
-                  <div class="floating-field">
-                    <input type="date" id="f-date" name="date" required placeholder=" " />
-                    <label for="f-date" class="date-label">Move Date *</label>
-                    <span class="field-error" id="err-date"></span>
-                  </div>
-                  <div class="floating-field">
-                    <select id="f-type" name="type" required>
-                      <option value="" disabled selected></option>
-                      <option value="studio">Studio / 1-Bed</option>
-                      <option value="twobdr">2 Bedroom</option>
-                      <option value="threebdr">3 Bedroom</option>
-                      <option value="house">Large House (4+)</option>
-                      <option value="office">Office / Commercial</option>
-                      <option value="specialty">Specialty Items</option>
-                    </select>
-                    <label for="f-type">Move Type *</label>
-                    <span class="field-error" id="err-type"></span>
-                  </div>
-                </div>
-                <div class="form-nav">
-                  <button type="button" class="btn-form-back" id="back-2">&larr; Back</button>
-                  <button type="button" class="btn-form-next" id="next-2">Submit Request &rarr;</button>
-                </div>
+              <div class="fg">
+                <label class="fl-label" for="ad">Adınız Soyadınız</label>
+                <input type="text" id="ad" class="fl-input" placeholder=" " required />
               </div>
-              <div class="form-step" id="step-3">
-                <div class="success-animation">
-                  <div class="success-circle"><div class="success-check">&#10003;</div></div>
-                  <h3 class="success-title">Quote Request Sent!</h3>
-                  <p class="success-msg">Thank you! We&rsquo;ve received your request and a VIPro specialist will contact you within <strong>2 hours</strong> with your personalized estimate.</p>
-                  <div class="success-details">
-                    <div class="success-detail-item"><span>&#128222;</span><span>Expect a call at the number you provided</span></div>
-                    <div class="success-detail-item"><span>&#128231;</span><span>Confirmation email sent to your inbox</span></div>
-                  </div>
-                  <button type="button" class="btn-primary" id="reset-form">Start New Quote</button>
-                </div>
+              <div class="fg">
+                <label class="fl-label" for="tel">Telefon Numaranız</label>
+                <input type="tel" id="tel" class="fl-input" placeholder=" " required />
               </div>
-            </form>
+              <button type="button" class="form-next" onclick="nextStep()">Devam Et →</button>
+            </div>
+            <div class="form-step" data-step="2">
+              <div class="fstep-head">
+                <span class="fstep-label">Adım 2 / 2</span>
+                <div class="fstep-bar"><div class="fstep-fill" style="width:100%"></div></div>
+              </div>
+              <div class="fg">
+                <label class="fl-label" for="hizmet">Hizmet Türü</label>
+                <select id="hizmet" class="fl-input fl-select" required>
+                  <option value=""> </option>
+                  <option>Tinyhouse Taşıma</option>
+                  <option>Tekne Taşıma</option>
+                  <option>Karavan Taşıma</option>
+                  <option>Servis Araçları Çekimi</option>
+                  <option>Aparatlı Özel Çekim</option>
+                  <option>Şanziman / Defransiyel Kilitli</option>
+                  <option>Lastiği Kopmuş Araç</option>
+                  <option>Forklift Taşıma</option>
+                  <option>Manlift / Transefi</option>
+                  <option>Diğer</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label class="fl-label" for="aciklama">Kısa Açıklama</label>
+                <textarea id="aciklama" class="fl-input fl-textarea" placeholder=" " rows="3"></textarea>
+              </div>
+              <div class="form-btns">
+                <button type="button" class="form-back" onclick="prevStep()">← Geri</button>
+                <button type="submit" class="form-submit" id="submitBtn">Teklif İste 🚛</button>
+              </div>
+            </div>
+            <div class="form-step form-success" data-step="3">
+              <div class="success-icon">✅</div>
+              <h4>Talebiniz Alındı!</h4>
+              <p>En kısa sürede <strong>+90 554 852 52 69</strong> numarasından sizi arayacağız.</p>
+              <a href="tel:+905548525269" class="form-next" style="text-align:center;display:block;text-decoration:none">Şimdi Ara →</a>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="section section--dark">
-    <div class="container">
-      <div class="contact-layout">
-        <div class="contact-left reveal">
-          <span class="section-tag">Get in Touch</span>
-          <h2 class="section-title">We&rsquo;re Here When You Need Us</h2>
-          <p class="section-desc">Have questions before booking? Our moving specialists are standing by to help.</p>
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-icon-pill">&#128222;</div>
-              <div class="contact-item-text"><strong>Call Us</strong><a href="tel:+18005551234">(800) 555-1234</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon-pill">&#128231;</div>
-              <div class="contact-item-text"><strong>Email Us</strong><a href="mailto:hello@vipromovingco.com">hello@vipromovingco.com</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon-pill">&#128336;</div>
-              <div class="contact-item-text"><strong>Hours</strong><span>Mon &ndash; Sat: 7am &ndash; 8pm EST</span><span>Sunday: 9am &ndash; 5pm EST</span></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon-pill">&#128205;</div>
-              <div class="contact-item-text"><strong>Headquarters</strong><span>1250 Moving Ave, Suite 400</span><span>New York, NY 10001</span></div>
-            </div>
-          </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">TOLGA <span class="text-amber">OTO KURTARMA</span></div>
+        <p>İzmir merkezli, Türkiye geneli profesyonel çekici ve oto kurtarma hizmeti.</p>
+        <div class="footer-badge-row">
+          <span class="fbadge">🟢 7/24 Açık</span>
+          <span class="fbadge">🇹🇷 81 İl</span>
+          <span class="fbadge">✅ Sigortalı Hizmet</span>
         </div>
-        <div class="contact-right reveal">
-          <div class="contact-card">
-            <h3>Prefer to chat?</h3>
-            <p>Our team is available right now to answer your questions and help you plan your perfect move.</p>
-            <a href="tel:+18005551234" class="btn-primary btn-full">&#128222; Call Now &mdash; It&rsquo;s Free</a>
-            <div class="contact-divider"><span>or</span></div>
-            <a href="mailto:hello@vipromovingco.com" class="btn-outline btn-full">Send Us an Email</a>
-            <div class="contact-response-note">
-              <span class="response-dot"></span>
-              Average response time: <strong>under 15 minutes</strong>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hizmetler</h4>
+        <ul>
+          <li><a href="#hizmetler">Tinyhouse Taşıma</a></li>
+          <li><a href="#hizmetler">Tekne Taşıma</a></li>
+          <li><a href="#hizmetler">Karavan Taşıma</a></li>
+          <li><a href="#hizmetler">Forklift Taşıma</a></li>
+          <li><a href="#hizmetler">Aparatlı Çekim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="tel:+905548525269">📞 0554 852 52 69</a></li>
+          <li><a href="https://wa.me/905548525269" target="_blank">💬 WhatsApp</a></li>
+          <li><span>📍 İzmir / Türkiye</span></li>
+          <li><span>🕐 7/24 Hizmet</span></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-brand">
-          <a href="#" class="footer-logo"><span class="logo-vi">VI</span><span class="logo-pro">Pro</span>&nbsp;<span class="logo-moving">MOVING</span></a>
-          <p class="footer-tagline">Moving lives forward with care, precision, and a smile &mdash; since 2009.</p>
-          <div class="footer-socials">
-            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="#" class="social-link" aria-label="Twitter X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Services</h4>
-          <ul class="footer-links">
-            <li><a href="#services">Residential Moving</a></li>
-            <li><a href="#services">Commercial Moving</a></li>
-            <li><a href="#services">Packing Services</a></li>
-            <li><a href="#services">Long Distance</a></li>
-            <li><a href="#services">Storage Solutions</a></li>
-            <li><a href="#services">Specialty Moves</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Company</h4>
-          <ul class="footer-links">
-            <li><a href="#why-us">About VIPro</a></li>
-            <li><a href="#testimonials">Reviews</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#contact">Careers</a></li>
-            <li><a href="#contact">Press</a></li>
-            <li><a href="#contact">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Contact</h4>
-          <ul class="footer-links footer-contact-links">
-            <li><a href="tel:+18005551234">&#128222; (800) 555-1234</a></li>
-            <li><a href="mailto:hello@vipromovingco.com">&#128231; hello@vipromovingco.com</a></li>
-            <li><span>&#128205; 1250 Moving Ave, Suite 400<br />New York, NY 10001</span></li>
-            <li><span>&#128336; Mon&ndash;Sat 7am&ndash;8pm EST</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2025 VIPro Moving Co. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="#">Privacy Policy</a><span>&middot;</span>
-          <a href="#">Terms of Service</a><span>&middot;</span>
-          <a href="#">DOT #1234567</a>
-        </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Tolga Oto Kurtarma. Tüm hakları saklıdır.</span>
+        <span>İzmir Merkezli · Türkiye Geneli Hizmet</span>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING CTA BUTTON -->
-  <div class="floating-cta" id="floating-cta">
-    <a href="#quote" class="floating-cta-btn">
-      <span class="floating-cta-truck">&#128667;</span>
-      <span>Get Free Quote</span>
-    </a>
-  </div>
+  <a href="tel:+905548525269" class="float-cta" id="floatCta">
+    <span class="float-pulse"></span>
+    📞 Hemen Ara
+  </a>
 
-  <!-- TOAST NOTIFICATION -->
-  <div class="toast" id="toast" role="alert" aria-live="polite">
-    <div class="toast-icon">&#10003;</div>
-    <div class="toast-content">
-      <strong>Quote Request Sent!</strong>
-      <span>We&rsquo;ll be in touch within 2 hours.</span>
-    </div>
-    <button class="toast-close" id="toast-close" aria-label="Close notification">&times;</button>
+  <div class="toast" id="toast">
+    <span>🎉</span>
+    <div><strong>Talebiniz Alındı!</strong><p>Sizi en kısa sürede arayacağız.</p></div>
   </div>
 
   <script src="script.js"></script>
