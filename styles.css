@@ -292,4 +292,11 @@ img{display:block;max-width:100%}
   .container{padding:0 16px}
   .why-card{padding:28px 20px}
   .why-big{font-size:72px}
+  .bolge-grid{grid-template-columns:repeat(3,1fr)}
 }
+
+/* ── Hizmet Bölgeleri ── */
+.bolge-section{padding:80px 0;background:var(--bg2)}
+.bolge-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:40px}
+.bolge-item{display:block;padding:12px 8px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);text-align:center;font-family:var(--fd);font-size:13px;font-weight:600;color:var(--text);letter-spacing:.3px;transition:background var(--tr),color var(--tr),border-color var(--tr)}
+.bolge-item:hover{background:var(--amber-d);color:var(--amber);border-color:var(--amber)}
