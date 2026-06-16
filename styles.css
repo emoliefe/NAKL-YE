@@ -229,11 +229,20 @@ img{display:block;max-width:100%}
 .footer-col ul li a:hover{color:var(--amber)}
 .footer-bottom{border-top:1px solid var(--borderS);padding:18px 0;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim)}
 
+/* ── Hizmet Bölgeleri ── */
+.bolge-section{padding:80px 0;background:var(--bg2)}
+.bolge-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:40px}
+.bolge-item{display:block;padding:12px 8px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);text-align:center;font-family:var(--fd);font-size:13px;font-weight:600;color:var(--text);letter-spacing:.3px;transition:background var(--tr),color var(--tr),border-color var(--tr)}
+.bolge-item:hover{background:var(--amber-d);color:var(--amber);border-color:var(--amber)}
+
 /* FLOAT CTA */
-.float-cta{position:fixed;bottom:28px;right:28px;z-index:999;background:var(--amber);color:#0C1118;padding:13px 22px;border-radius:999px;font-family:var(--fd);font-size:16px;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 28px rgba(245,158,11,.45);transform:translateY(90px);opacity:0;transition:all .4s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;gap:8px}
+.float-cta{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;gap:10px;transform:translateY(90px);opacity:0;transition:all .4s cubic-bezier(.34,1.56,.64,1)}
 .float-cta.visible{transform:translateY(0);opacity:1}
-.float-cta:hover{background:var(--amber2);transform:translateY(-4px) scale(1.04);box-shadow:0 16px 44px rgba(245,158,11,.55)}
-.float-dot{width:9px;height:9px;border-radius:50%;background:#0C1118;position:relative}
+.float-tel{display:flex;align-items:center;gap:8px;background:var(--amber);color:#0C1118;padding:13px 22px;border-radius:999px;font-family:var(--fd);font-size:15px;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 28px rgba(245,158,11,.45);transition:all .25s ease}
+.float-tel:hover{background:var(--amber2);transform:translateY(-3px)}
+.float-wa{display:flex;align-items:center;gap:8px;background:#25D366;color:#fff;padding:13px 18px;border-radius:999px;font-family:var(--fd);font-size:15px;font-weight:700;box-shadow:0 8px 28px rgba(37,211,102,.35);transition:all .25s ease}
+.float-wa:hover{background:#1ebe5d;transform:translateY(-3px)}
+.float-dot{width:9px;height:9px;border-radius:50%;background:#0C1118;position:relative;flex-shrink:0}
 .float-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(12,17,24,.5);animation:blink 1.4s ease-in-out infinite}
 
 /* TOAST */
@@ -283,8 +292,11 @@ img{display:block;max-width:100%}
   .gi-cap{opacity:1;transform:translateY(0)}
   .footer-grid{grid-template-columns:1fr;padding:40px 0 28px}
   .footer-bottom{flex-direction:column;gap:6px;text-align:center}
-  .float-cta{bottom:16px;right:16px}
-  .toast{left:16px;right:16px;bottom:16px}
+  .float-cta{bottom:16px;right:auto;left:50%;transform:translateX(-50%) translateY(90px);flex-direction:row;gap:8px}
+  .float-cta.visible{transform:translateX(-50%) translateY(0)}
+  .float-tel,.float-wa{font-size:14px;padding:11px 16px}
+  .toast{left:16px;right:16px;bottom:90px}
+  .bolge-grid{grid-template-columns:repeat(3,1fr)!important}
 }
 @media(max-width:480px){
   .hh-brand{font-size:clamp(44px,13.5vw,72px);letter-spacing:0px}
@@ -304,11 +316,6 @@ img{display:block;max-width:100%}
   .bolge-grid{grid-template-columns:repeat(3,1fr)}
 }
 
-/* ── Hizmet Bölgeleri ── */
-.bolge-section{padding:80px 0;background:var(--bg2)}
-.bolge-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:40px}
-.bolge-item{display:block;padding:12px 8px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);text-align:center;font-family:var(--fd);font-size:13px;font-weight:600;color:var(--text);letter-spacing:.3px;transition:background var(--tr),color var(--tr),border-color var(--tr)}
-.bolge-item:hover{background:var(--amber-d);color:var(--amber);border-color:var(--amber)}
 
 /* ── NAP Bloğu ── */
 .nap-block{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:16px 24px;text-align:center;font-size:14px;color:var(--muted);margin:0 0 0 0}
